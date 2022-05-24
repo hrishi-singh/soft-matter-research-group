@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Vikky Anand | Research Blog</title>
+    <link rel="stylesheet" href=".\CSS\style.css">
+</head>
+<body onresize="showfunc()">
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Logo_IITJ.png" alt="IIT Jodhpur Logo">
+        </div>
+        <a href="#" class="name">
+            Soft Matter Research Group
+        </a>
+        <div id="menubar" >
+            <span  onclick="togglefunc()" id="menuIcon">&#9776;</span>
+            <ul id="menu" >
+                <li class="item"><a href="#home" class="active">Home</a></li>
+                <li class="item"><a href="about.html">Profile</a></li>
+                <li class="item"><a href="#research">Research</a></li>
+                <li class="item"><a href="#publication">Publications</a></li>
+                <li class="item"><a href="#gallery">Gallery</a></li>
+                <li class="item"><a href="#groups">Groups</a></li>
+                <li class="item"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="home">
+        <video src="Bg_Trim.mp4" muted loop autoplay id="bgvid">
+        </video>
+        <div class="heading1">
+            <h3>
+                Welcome to Soft Matter <br> Research Group!
+            </h3>
+        </div>
+        <div class="subheading1">
+            <h4>
+                Dr. Vikky Anand
+            </h4>
+        </div>
+        <div>
+        <a href="#about">
+            <button class="btn">Learn More</button>
+            </a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 id="aboutheading">About</h1>
+        <div class="container">
+
+            <div class="card" data-tilt>
+                <img src="profile.jpg" alt="">
+                <h3>Dr. Vikky Anand</h3>
+                <p>(Assistant Proffesor at IIT Jodhpur) <br> Department of Chemical Engineering </p>
+            
+            <div id="bio">
+                <p><h4>RESEARCH INTERESTS</h4></p>
+                Electrohydrodynamics | Multiphase flow | Electro-desalting | Soft matter | Rheology | Nanoparticle synthesis
+            </div>
+
+                <div class="links">
+                    <a href = "mailto:  vikky@iitj.ac.in"><img src="email.png" alt="Email"></a>
+                    <a href="http://linkedin.com/in/vikky-anand-9018a05a"><img src="linkedin.png" alt="linkedin"></a>
+                    <!-- <a href="skype:anandvikky90_1?userinfo"><img src="skype.png" alt="skype"></a> -->
+                </div> 
+                
+            </div>
+
+            
+            
+        </div>
+        <div id="split-para">               
+            <p ><span>Dr. Vikky Anand received his doctoral degree in Chemical Engineering ​from Indian Institute of Technology Bombay. During his PhD, he worked in the electrocoalescence of droplets and emulsion which has broader application in the petroleum, emulsion, desalting and separation industries. Currently, Dr. Vikky Anand working in the Department of Chemical Engineering IIT Jodhpur.</span></p>
+        </div>
+        <script src="vanilla-tilt.js"></script>
+    </section>
+
+        <script>
+            var x=document.getElementById("menu");
+            var y=document.getElementById("menuIcon");
+            function showfunc(){
+                    x.style.display="flex";
+            }
+                
+                
+            function togglefunc(){
+                if(x.style.display=="flex"){
+                    x.style.display="none";
+                }
+                else{
+                    x.style.display="flex";
+                }
+                
+                
+            }
+        </script>
+
+</body>
+</html>

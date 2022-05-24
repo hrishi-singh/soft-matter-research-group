@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Dr. Vikky Anand</title>
+    <link rel="stylesheet" href=".\CSS\style_profile.css">
+
+</head>
+
+<body onresize="showfunc()">
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Logo_IITJ.png" alt="IIT Jodhpur Logo">
+        </div>
+        <a href="#" class="name">
+            Soft Matter Research Group
+        </a>
+        <div id="menubar" >
+            <span  onclick="togglefunc()" id="menuIcon">&#9776;</span>
+            <ul id="menu" >
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="#about"  class="active">Profile</a></li>
+                <li class="item"><a href="#research">Research</a></li>
+                <li class="item"><a href="#publication">Publications</a></li>
+                <li class="item"><a href="#gallery">Gallery</a></li>
+                <li class="item"><a href="#groups">Groups</a></li>
+                <li class="item"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="thumbnail">
+        <h3>Personal Profile</h3>
+    </div>
+    <section id="bio">
+
+        <div id="ProfilePic">
+            <img src="About_profile_img.jpg" alt="">
+        </div>
+        <div id="ProfileInfo">
+            <h1>Dr. Vikky Anand<br></h1>
+            <p>
+                <!-- <br> -->
+                Assistant Professor,<br>
+                Department of Chemical Engineering. <br>
+                Indian Institute of Technology Jodhpur, <br> Rajasthan, India.
+            </p>
+        </div>
+        <div id="contactInfo">
+
+            <h1>Contact Information</h1>
+            <ul>
+                <li>Phone: (91 291) 280 1710</li>
+                <li><a href="mailto:  vikky@iitj.ac.in"> eMail: vikky@iitj.ac.in</a></li>
+            </ul>
+            <p>
+                Department of Chemical Engineering <br>
+                NH 62, Nagaur Rd, <br>
+                Karwar,IITJ, Rajasthan <br>
+                342030 India
+            </p>
+        </div>
+    </section>
+    <section id="edu">
+        <h1>Education</h1>
+        <div class="container">
+            <div class="sec">
+                <div class="card">
+
+                    <div class="imgBox">
+                        <img src="/IITB.jpg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <h2>Indian Institute of Technology Bombay, India</h2>
+                        <p>
+                        <h3>PhD</h3><span> (2015-2020)</span> </p>
+                    </div>
+
+                </div>
+
+                <div id="iitb" class="coll">
+                    <h2>IIT Bombay</h2>
+                    <h4>(PhD)</h4>
+                </div>
+            </div>
+
+
+            <div class="sec">
+
+                <div class="card">
+
+                    <div class="imgBox">
+                        <img src="/IITR.png" alt="">
+                    </div>
+
+                    <div class="content">
+                        <h2>Indian Institute of Technology Roorkee, India</h2>
+                        <p>
+                        <h3>M.Tech</h3><span> (2013-2015)</span> </p>
+                    </div>
+                </div>
+                <div id="iitr" class="coll">
+                    <h2>IIT Roorkee</h2>
+                    <h4>(M.Tech)</h4>
+                </div>
+            </div>
+
+            <div class="sec">
+
+                <div class="card">
+
+                    <div class="imgBox">
+                        <img src="/NITS.png" alt="">
+                    </div>
+
+                    <div class="content">
+                        <h2>National Institute of Technology Srinagar, India</h2>
+                        <p>
+                        <h3>B.Tech</h3> <span> (2009-2013) </span></p>
+                    </div>
+
+                </div>
+                    <div id="nits" class="coll">
+                        <h2>NIT Srinagar</h2>
+                        <h4>(B.Tech)</h4>
+                    </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="awards">
+        <h1>Awards, Scholarships and Grants</h1>
+        <div class="container">
+
+            <div class="card1">
+                <p>Institute Awards for Excellence in Ph.D Thesis Work, 2020, IIT Bombay.</p>
+            </div>
+            <div class="card1">
+                <p>RG Manudhane PhD Excellence Award, Department of Chemical Engineering, 2020, IIT Bombay. </p>
+            </div>
+            <div class="card1">
+                <p>Young Researcher Award, 2020 by Centre for Education Growth and Research (CEGR).</p>
+            </div>
+            <div class="card1">
+                <p>Travel grant award by American Physical Society Division of Fluid Dynamics, USA 2018.
+
+                </p>
+            </div>
+        </div>
+
+
+    </section>
+    <script>
+        var x=document.getElementById("menu");
+        var y=document.getElementById("menuIcon");
+        function showfunc(){
+                x.style.display="flex";
+        }
+            
+            
+        function togglefunc(){
+            if(x.style.display=="flex"){
+                x.style.display="none";
+            }
+            else{
+                x.style.display="flex";
+            }
+            
+            
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&family=Ubuntu:wght@400;500&display=swap');
+
+*{
+    margin : 0px;
+    padding : 0px;
+    
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+:root{
+    --navbar-height:60px;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    display: flex;
+    background-color: white;
+    position: sticky;
+    justify-content: space-between;
+    z-index: 3;
+    
+}
+nav .name{
+    font-family: 'poppins', sans-serif;
+    margin-top: 12px;
+    float: left;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 1.15em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#logo{
+    left: 0px;
+    margin: 1px 1px;
+    
+}
+
+#logo img{
+    
+    height: 60px;
+    width: 60px;
+    margin: 1px 1px;
+    
+}
+#navbar ul{
+    display: flex;
+    margin-top: 18px;
+    /* flex-direction: column; */
+    
+}
+
+#navbar ul li{
+    display: inline-block;
+    list-style: none;
+    font-size:  1.45rem;
+
+} 
+
+#navbar::before{
+    content:"";
+    position: absolute;
+    height: 7%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+
+    
+}
+
+#navbar ul li a{
+    color: black;
+    padding: 3px 13px;
+    text-decoration: none;
+    border-radius: 28px;
+    margin-left: 5px;
+}
+
+#navbar ul li a.active{
+    color: white;
+    background-color: black;
+}
+
+#navbar ul li a:hover{
+    background-color: black;
+    color: white;
+}
+#menuIcon{
+    margin: 0 20px;
+    margin-bottom: 12px;
+    font-size: 36px;
+    cursor: pointer;
+    display: none;
+    /* visibility: hidden; */
+}
+
+
+.thumbnail{
+    background: url(/B2c.jpg) no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.thumbnail h3{
+    color: navy;
+    padding: 12px 20px;
+    font-size: 36px;
+    font-family: 'poppins','sans serif';
+}
+#ProfilePic img{
+    position: relative;
+    margin-top: -15%;
+    border-radius: 33px;
+    padding: 12px 20px;
+    height: 60vh;
+
+}
+#bio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px;
+    padding:12px 20px;
+
+}
+
+#ProfileInfo h1{
+    display: inline-block;
+    font-family: "poppins",sans-serif;
+    color: rgb(22, 117, 113);
+    font-weight: 800;
+    font-size: 3.2em;       
+    }
+#ProfileInfo p{
+    color: rgb(39, 151, 146);
+    font-size: 1.5em; 
+    font-family: "ubuntu",sans-serif;
+    padding-right: 20px;
+}
+#contactInfo {
+    font-family: 'poppins','sans serif';
+    justify-content: right;
+    text-align: left;
+    margin-top: 2%;
+    
+}
+#contactInfo h1{
+    
+    font-size: 1.5em;
+    font-weight: 400;
+    color:rgb(22, 117, 113);
+}
+#contactInfo p{
+    font-family: 'ubuntu','sans serif';
+    padding: 12px 0px;
+    font-size: 1.1em;
+    /* font-size: 1.5vw; */
+    /* font-weight:400; */
+    line-height: 28px;
+
+}
+#contactInfo ul{
+    font-family: 'ubuntu','sans serif';
+    list-style: none;
+    font-size: 1.1em;
+    font-weight:400;
+    line-height: 28px;
+}
+#contactInfo ul li a{
+    text-decoration: none;
+    color: black;
+    }  
+#edu{
+    /* position: relative; */
+    /* height: 550px; */
+    background-color: #2F8F9D;
+}
+#edu h1{
+    text-align: center;
+    font-size: 4em;
+    color:#fff;
+    padding-top: 1.5%;
+
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;  
+    flex-direction:row; 
+}
+.sec{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.container .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #EFFFFD;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    flex-direction: row;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover{
+    height: 420px;
+}
+
+.container .card .imgBox{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 6px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+}
+.container .card .imgBox img{
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    color:rgb(22, 117, 113);
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+
+}
+.container .card .content h2{
+    padding: 6px;
+    margin-bottom: 12px;
+}
+.coll{
+    padding: 12px;
+}
+
+.coll h2,h4{
+    color: white;
+    font-size: 42px;
+    align-items: center;
+
+}
+
+#awards{
+    height: 560px;
+    background-color: white;
+}
+
+#awards h1{
+    margin: 5%;
+    text-align: center;
+    font-size: 3em;
+    color:rgb(22, 117, 113);
+}
+
+.container .card1{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: lightblue;
+    margin: 30px 10px;
+    padding: 20px 10px;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    /* box-shadow: 0 5px 202px rgba(0,0,0,0.5); */
+}
+.container .card1:hover{
+    height: 160px;
+}
+.card1 p{
+    font-size: 1.45em;
+    color: rgb(11, 63, 60);
+    text-align: center;
+}
+
+
+@media only screen and (max-width:950px){
+    #menuIcon{
+        display: block;
+    }
+    #menu{
+        display: flex;
+        flex-direction: column;
+    }
+    #menubar ul{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width:700px){
+    #bio{
+        flex-direction: column;
+        text-align: center;
+    }
+    #contactInfo{
+        text-align: center;
+    }
+
+}
