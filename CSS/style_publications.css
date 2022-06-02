@@ -1,0 +1,197 @@
+@import "style_navigation.css";
+
+.container{
+    margin: 0px;
+}
+body{
+    margin: 0px;
+}
+
+#thumbnail {
+    height: 400px;
+    display: flex;
+
+    background-image: url("../pub_thumbnail.jpg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+#thumbnail h1 {
+    font-size: 3em;
+    color: navy;
+    z-index: 1;
+}
+
+.box {
+    /* background-color: rgba(0, 0, 0, 0.137); */
+    position: relative;
+    width: 350px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 100%;
+    background: linear-gradient(white, SILVER, rgb(22, 117, 113), navy);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: radial-gradient(#FFF, SILVER);
+}
+
+#journals h1,#contributions h1 {
+    text-align: center;
+    margin: 20px 0px;
+    font-family: "poppins", "sans-serif";
+    font-size: 2em;
+    color: rgb(22, 117, 113);
+}
+
+#journals,#contributions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* max-width: 1200px; */
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    margin: 0px;
+}
+.pubheading{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2em;
+    color:rgb(22, 117, 113);
+    margin: 12px 0;
+    padding: 12px 0 20px 0;
+}
+.card {
+    position: relative;
+    min-width:320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+        inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+        5px 5px 5px rgba(0, 0, 0, 0.05),
+        -5px -5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin: 40px;
+}
+
+.card .journal-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: linear-gradient(45deg,#68A7AD,SILVER);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.card:hover .journal-box {
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+
+}
+
+.card .journal-box .content{
+    padding: 20px;
+    text-align: center;
+}
+
+.card .journal-box .content h2{
+    /* position: absolute; */
+
+    font-size: 1.3em;
+    color: #062C30;
+    transition: 0.5s;
+    pointer-events: none;
+padding-bottom: 20px;
+}
+
+.card .journal-box .content p{
+    padding: 12px 0;
+    font-size: 18px;
+    font-family: "sans-serif";
+    color: #062C30;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.card .journal-box .content p{
+    font-size: 1em;
+    color: #062C30;
+    z-index: 1;
+    transition: 0.5s;
+
+}
+.card:hover .journal-box .content p,.card:hover .journal-box .content p{
+    color: #125B50;
+
+}
+
+#openchapter{
+    background: linear-gradient(45deg,#019267,SILVER);
+}
+
+#chapter{
+    background: url("/research_bg.jpg");
+    padding: 20px;
+}
+#chapter h2{
+font-size: 2.25em;
+}
+
+#chapter span{
+    font-size: 24px;
+    color: #064635;
+}
+
+#chapter p{
+    color: #fff;
+    font-size: 28px;
+}
+
+#contributions{
+    background: url();
+}
+#ViewMorebtn{
+    margin: 12px 8px;
+    padding: 12px 36px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#ViewMorebtn:hover{
+   background: #125B50;
+   color: #fff;
+}
+

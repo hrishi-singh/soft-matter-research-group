@@ -1,0 +1,19 @@
+@import "style_navigation.css";
+@import "/CSS/style_publications.css";
+
+#thumbnail {
+    background-image: url("../oil-water-emul.jpg");
+
+}
+#thumbnail h1{
+    color:#361500;
+}
+.box::after {
+    background: radial-gradient(goldenrod,#F3950D);
+
+}
+
+.box::before {
+    background: linear-gradient(SILVER,#F3950D,#603601,#361500);
+
+}

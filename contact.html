@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href=".\CSS\style_contact.css">
+
+</head>
+<body onresize="showfunc()">
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Logo_IITJ.png" alt="IIT Jodhpur Logo">
+        </div>
+        <a href="#" class="name">
+            Soft Matter Research Group
+        </a>
+        <div id="menubar" >
+            <span  onclick="togglefunc()" id="menuIcon">&#9776;</span>
+            <ul id="menu" >
+                <li class="item"><a href="index.html" >Home</a></li>
+                <li class="item"><a href="about.html">Profile</a></li>
+                <li class="item"><a href="research.html">Research</a></li>
+                <li class="item"><a href="publication.html">Publications</a></li>
+                <li class="item"><a href="gallery.html">Gallery</a></li>
+                <li class="item"><a href="groups.html">Groups</a></li>
+                <li class="item"><a href="#contact" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="contactBox">
+            
+            <div class="left">
+                <h2>Contact Us</h2>
+                <input type="text" class="field" id="name" placeholder="Your Name" required>
+                <input type="email" class="field" id="email-sender" placeholder="Your Email" required>
+                <input type="text" class="field" id="mob" placeholder="Your number">
+                <textarea class="field" id="msgbox" placeholder="Message" required></textarea>
+                <button class="submitbtn" onclick="mail()">Send</button>
+            </div>
+        </div>
+        <div class="right">
+            <div id="contactInfo">
+
+                <h1>Contact Information:</h1>
+                <ul>
+                    <li>Phone: (91 291) 280 1710</li>
+                    <li><a href="mailto:  vikky@iitj.ac.in"> eMail:vikky@iitj.ac.in</a></li>
+                </ul>
+                <p>
+                    Department of Chemical Engineering <br>
+                    NH 62, Nagaur Rd, <br>
+                    Karwar,IITJ, Rajasthan <br>
+                    342030 India
+                </p>
+            </div>
+        </div>
+    </div>
+        
+    
+        <script>
+               var x=document.getElementById("menu");
+                    var y=document.getElementById("menuIcon");
+                    function showfunc(){
+                            x.style.display="flex";
+                    }
+                    function mail(){
+                        var name=document.getElementById("name").value;
+                var mobile=document.getElementById("mob").value;
+                var sender=document.getElementById("email-sender").value;
+                var msg=document.getElementById("msgbox").value;
+                        window.location='mailto:vikky@iitj.ac.in'+'?subject=message from blog'+'&body='+"Sender's Details : %0A%0A"+"Name: "+name+'%0A'+"Mobile Number: "+mobile+'%0A'+"Email:"+sender+'%0A%0A'+"Message:%0A"+msg;
+                    }
+        </script>
+           <script src="menu-bar.js"></script>
+</body>
+</html>

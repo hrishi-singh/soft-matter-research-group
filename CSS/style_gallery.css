@@ -1,0 +1,13 @@
+@import "style_navigation.css";
+
+
+body{
+    background-color: #000;
+}
+
+.comingsoon img{
+    display: flex;
+    margin: auto;
+    width: 50vw;
+
+}

@@ -1,0 +1,116 @@
+@import "style_navigation.css";
+
+body{
+background: url('../contact_bg.jpg') no-repeat;
+background-position: center top;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    position: relative;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    /* width: 100%; */
+    height: 100%;
+    padding: 20px 100px;
+
+}
+.contactBox{    display: grid;
+    grid-template-columns: repeat(1,0.8fr);
+    align-items: center;
+    text-align: center;
+}
+.right{
+    margin: 12px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.733);
+    justify-content: space-around;
+    border-radius: 20px;
+
+}
+.left{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 25px 40px;
+    border-radius: 20px;
+    font-family: "ubuntu", "sans-serif";
+    filter: blur(80%);
+
+}
+h2{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.field{
+width: 100%;
+padding: 0 0.5rem 1rem;
+background-color: rgba(230,230,230,0.6);
+font-size: 16px;
+border: 2px solid rgba(0, 0, 0, 0.301);
+border-radius: 14px;
+margin-bottom: 22px;
+transition: .3s;
+}
+.field:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.field:focus{
+    background-color: rgba(255, 255, 255, 0.616);
+}
+#msgbox{
+    min-height: 140px;
+}
+.submitbtn{
+    padding: 8px 12px;
+    border-radius: 18px;
+    font-size: 18px;
+    background-color: black;
+    cursor: pointer;
+    width: 30%;
+    border: none;
+    color: white;
+
+}
+.submitbtn:hover{
+    background-color: cornflowerblue;
+    border: 2px solid rgb(102, 129, 250);
+
+}
+
+#contactInfo {
+    font-family: 'poppins','sans serif';
+    justify-content: right;
+    text-align: left;
+    margin-top: 2%;
+    
+}
+#contactInfo h1{
+    
+    font-size: 1.5em;
+    font-weight: 400;
+    color:rgb(22, 117, 113);
+}
+#contactInfo p{
+    font-family: 'ubuntu','sans serif';
+    padding: 12px 0px;
+    font-size: 1.1em;
+    /* font-size: 1.5vw; */
+    /* font-weight:400; */
+    line-height: 28px;
+
+}
+#contactInfo ul{
+    font-family: 'ubuntu','sans serif';
+    list-style: none;
+    font-size: 1.1em;
+    font-weight:400;
+    line-height: 28px;
+}
+#contactInfo ul li a{
+    text-decoration: none;
+    color: black;
+    }  
+
