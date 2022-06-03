@@ -1,9 +1,8 @@
 @import "style_navigation.css";
-@import "/CSS/style_publications.css";
+@import "style_publications.css";
 
 #thumbnail {
     background-image: url("../oil-water-emul.jpg");
-
 }
 #thumbnail h1{
     color:#361500;
@@ -38,7 +37,6 @@
     text-align: center;
 }
 .content img,iframe{
-    /* grid-column: 2/3; */
     object-fit: contain;
     padding: 0px 20px;
 }

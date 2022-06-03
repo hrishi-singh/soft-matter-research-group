@@ -164,7 +164,7 @@ padding-bottom: 20px;
 }
 
 #chapter{
-    background: url("/research_bg.jpg");
+    background: url("../research_bg.jpg");
 }
 #chapter h2{
 font-size: 2.25em;
@@ -204,7 +204,7 @@ font-size: 2.25em;
     z-index: -1;
     opacity: 0.25;
 
-    background-image: url('/oil_img.jpg');    
+    background-image: url('../oil_img.jpg');    
 }
 #journals::after{
     content: "";
@@ -214,6 +214,6 @@ font-size: 2.25em;
     z-index: -1;
     opacity: 0.57;
 
-    background-image: url('/jour_bg.png');    
+    background-image: url('../jour_bg.png');    
 }
 
