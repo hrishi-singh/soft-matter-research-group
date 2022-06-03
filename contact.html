@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href=".\CSS\style_contact.css">
 
 </head>
+
 <body onresize="showfunc()">
     <nav id="navbar">
         <div id="logo">
@@ -16,10 +18,10 @@
         <a href="#" class="name">
             Soft Matter Research Group
         </a>
-        <div id="menubar" >
-            <span  onclick="togglefunc()" id="menuIcon">&#9776;</span>
-            <ul id="menu" >
-                <li class="item"><a href="index.html" >Home</a></li>
+        <div id="menubar">
+            <span onclick="togglefunc()" id="menuIcon">&#9776;</span>
+            <ul id="menu">
+                <li class="item"><a href="index.html">Home</a></li>
                 <li class="item"><a href="about.html">Profile</a></li>
                 <li class="item"><a href="research.html">Research</a></li>
                 <li class="item"><a href="publication.html">Publications</a></li>
@@ -32,12 +34,13 @@
     <div class="container">
 
         <div class="contactBox">
-            
+
             <div class="left">
                 <h2>Contact Us</h2>
-                <input type="text" class="field" id="name" placeholder="Your Name" required>
-                <input type="email" class="field" id="email-sender" placeholder="Your Email" required>
-                <input type="text" class="field" id="mob" placeholder="Your number">
+                <input type="text" class="field" id="name" placeholder="Enter your Name" required="required">
+                <input type="email" class="field" id="email-sender" placeholder="Enter your Email" required="required">
+                <input type="text" onkeypress="return onlyNumberKey(event)" 
+                maxlength="10"  class="field" id="mob" placeholder="Enter your number">
                 <textarea class="field" id="msgbox" placeholder="Message" required></textarea>
                 <button class="submitbtn" onclick="mail()">Send</button>
             </div>
@@ -59,22 +62,45 @@
             </div>
         </div>
     </div>
-        
-    
-        <script>
-               var x=document.getElementById("menu");
-                    var y=document.getElementById("menuIcon");
-                    function showfunc(){
-                            x.style.display="flex";
-                    }
-                    function mail(){
-                        var name=document.getElementById("name").value;
-                var mobile=document.getElementById("mob").value;
-                var sender=document.getElementById("email-sender").value;
-                var msg=document.getElementById("msgbox").value;
-                        window.location='mailto:vikky@iitj.ac.in'+'?subject=message from blog'+'&body='+"Sender's Details : %0A%0A"+"Name: "+name+'%0A'+"Mobile Number: "+mobile+'%0A'+"Email:"+sender+'%0A%0A'+"Message:%0A"+msg;
-                    }
-        </script>
-           <script src="menu-bar.js"></script>
+
+
+    <script>
+        var x = document.getElementById("menu");
+        var y = document.getElementById("menuIcon");
+        function showfunc() {
+            x.style.display = "flex";
+        }
+        function mail() {
+            var name = document.getElementById("name").value;
+            var mobile = document.getElementById("mob").value;
+            
+
+            var sender = document.getElementById("email-sender").value;
+            var msg = document.getElementById("msgbox").value;
+            if(name!=="" && sender!=="" && msg!==""){
+                window.location = 'mailto:vikky@iitj.ac.in' + '?subject=message from blog' + '&body=' + "Sender's Details : %0A%0A" + "Name: " + name + '%0A' + "Mobile Number: " + mobile + '%0A' + "Email:" + sender + '%0A%0A' + "Message:%0A" + msg;
+            }
+            else{
+                window.alert("Error ! Fill the Form Correctly.");
+                
+            }
+        }
+        function onlyNumberKey(evt) {
+          
+          // Only ASCII character in that range allowed
+          var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+          if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+              return false;
+          return true;
+      }
+    </script>
+    <script src="menu-bar.js"></script>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; | www.soft-matter-research-group.com. | All rights reserved.
+        </div>
+    </footer>
 </body>
+
 </html>

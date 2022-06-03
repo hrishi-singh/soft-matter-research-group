@@ -177,10 +177,18 @@
 }
 
 #awards h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 5%;
     text-align: center;
     font-size: 3em;
     color:rgb(22, 117, 113);
+}
+
+#awards h1 img{
+    height: 100px;
+    width: 100px;
 }
 
 .container .card1{
@@ -203,20 +211,6 @@
     text-align: center;
 }
 
-
-@media only screen and (max-width:950px){
-    #menuIcon{
-        display: block;
-    }
-    #menu{
-        display: flex;
-        flex-direction: column;
-    }
-    #menubar ul{
-        display: none;
-    }
-    
-}
 @media only screen and (max-width:700px){
     #bio{
         flex-direction: column;

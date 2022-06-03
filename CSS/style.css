@@ -121,6 +121,7 @@
     position: relative;
     padding: 100px 20px;
     background: linear-gradient(rgba(39, 151, 146,0.2),#fff);
+    
 
 }
 
@@ -153,17 +154,19 @@
 }
 
 #split-para{
-    /* width:90%; */
-    display:block;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 60px;
+
     }
 #split-para span {
-    padding: 20px;
     font-family: "ubuntu",sans-serif;
     text-align: center;
     line-height: 200%;
     color: #000;
     font-size: 22px;
-    float:right;
+    float:center;
+
 
     }
 

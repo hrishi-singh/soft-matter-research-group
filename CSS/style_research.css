@@ -17,3 +17,45 @@
     background: linear-gradient(SILVER,#F3950D,#603601,#361500);
 
 }
+
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1em;
+    font-size: 22px;
+    margin: 20px;
+    padding: 12px;
+}
+#box3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box3 img{
+    width: 660px;
+}
+.content p{
+    text-align: center;
+}
+.content img,iframe{
+    /* grid-column: 2/3; */
+    object-fit: contain;
+    padding: 0px 20px;
+}
+.posts h1{
+    text-align: center;
+    margin: 20px 0px;
+    font-family: "poppins", "sans-serif";
+    font-size: 2em;
+    color: rgb(22, 117, 113);
+}
+
+@media only screen and (max-width:700px){
+    .container,.content {
+        display: flex;
+        flex-direction: column;
+    }
+    .content img,iframe{
+        width: 80vw;
+    }
+    }

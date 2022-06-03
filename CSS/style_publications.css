@@ -80,6 +80,7 @@ body{
     flex-wrap: wrap;
     padding: 20px 0px;
     margin: 0px;
+
 }
 .pubheading{
     display: flex;
@@ -164,7 +165,6 @@ padding-bottom: 20px;
 
 #chapter{
     background: url("/research_bg.jpg");
-    padding: 20px;
 }
 #chapter h2{
 font-size: 2.25em;
@@ -179,19 +179,41 @@ font-size: 2.25em;
     color: #fff;
     font-size: 28px;
 }
-
-#contributions{
-    background: url();
-}
 #ViewMorebtn{
-    margin: 12px 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     padding: 12px 36px;
     border-radius: 8px;
     cursor: pointer;
+    bottom: 20px;
 }
 
 #ViewMorebtn:hover{
    background: #125B50;
    color: #fff;
+}
+
+#contributions::after{
+    content: "";
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.25;
+
+    background-image: url('/oil_img.jpg');    
+}
+#journals::after{
+    content: "";
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.57;
+
+    background-image: url('/jour_bg.png');    
 }
 
