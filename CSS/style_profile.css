@@ -23,7 +23,10 @@
     margin-top: -15%;
     border-radius: 33px;
     padding: 12px 20px;
-    height: 60vh;
+    max-width: 300px;
+    max-height: 50vh;
+    min-height: 250px;
+
 
 }
 #bio{
@@ -48,6 +51,23 @@
     font-family: "ubuntu",sans-serif;
     padding-right: 20px;
 }
+#ViewCVbtn{
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 12px 36px;
+    border-radius: 8px;
+    border: 0.5px solid #125B50;
+    cursor: pointer;
+    bottom: 20px;
+}
+
+#ViewCVbtn:hover{
+   background: #125B50;
+   color: #fff;
+}
+
+
 #contactInfo {
     font-family: 'poppins','sans serif';
     justify-content: right;
@@ -182,8 +202,8 @@
 }
 
 #awards h1 img{
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
 }
 
 .container .card1{
