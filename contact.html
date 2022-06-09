@@ -37,7 +37,7 @@
 
             <div class="left">
                 <h2>Contact Us</h2>
-                <form  onsubmit="sendEmail(); reset(); return false;">
+                <form  onsubmit="mail(); reset(); return false;">
 
                     <input type="text" class="field" id="name" placeholder="Enter your Name" required="required">
                     <input type="email" class="field" id="email-sender" placeholder="Enter your Email" required="required">
@@ -66,48 +66,48 @@
         </div>
     </div>
 
-<script src="https://smtpjs.com/v3/smtp.js"></script>
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
     <script>
         var x = document.getElementById("menu");
         var y = document.getElementById("menuIcon");
         function showfunc() {
             x.style.display = "flex";
         }
-        // function mail() {
-        //     var name = document.getElementById("name").value;
-        //     var mobile = document.getElementById("mob").value;
-            
-
-        //     var sender = document.getElementById("email-sender").value;
-        //     var msg = document.getElementById("msgbox").value;
-        //     if(name!=="" && sender!=="" && msg!==""){
-        //         window.location = 'mailto:vikky@iitj.ac.in' + '?subject=message from blog' + '&body=' + "Sender's Details : %0A%0A" + "Name: " + name + '%0A' + "Mobile Number: " + mobile + '%0A' + "Email:" + sender + '%0A%0A' + "Message:%0A" + msg;
-        //     }
-        //     else{
-        //         window.alert("Error ! Fill the Form Correctly.");
-                
-        //     }
-        // }
-        function sendEmail(){
+        function mail() {
             var name = document.getElementById("name").value;
             var mobile = document.getElementById("mob").value;
             
 
             var sender = document.getElementById("email-sender").value;
             var msg = document.getElementById("msgbox").value;
-            
-                    Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "ginan95010@nzaif.com",
-                Password : "hsingh.77",
-                To : 'singhhrishi007@gmail.com',
-                From : document.getElementById("email-sender").value,
-                Subject : "Message from Soft matter Website",
-                Body : "Sender's Details : %0A%0A" + "Name: " + name + '%0A' + "Mobile Number: " + mobile + '%0A' + "Email:" + sender + '%0A%0A' + "Message:%0A" + msg
-            }).then(
-              message => alert(message)
-            );
+            if(name!=="" && sender!=="" && msg!==""){
+                window.location = 'mailto:vikky@iitj.ac.in' + '?subject=message from blog' + '&body=' + "Sender's Details : %0A%0A" + "Name: " + name + '%0A' + "Mobile Number: " + mobile + '%0A' + "Email:" + sender + '%0A%0A' + "Message:%0A" + msg;
+            }
+            else{
+                window.alert("Error ! Fill the Form Correctly.");
+                
+            }
         }
+        // function sendEmail(){
+        //     var name = document.getElementById("name").value;
+        //     var mobile = document.getElementById("mob").value;
+            
+
+        //     var sender = document.getElementById("email-sender").value;
+        //     var msg = document.getElementById("msgbox").value;
+            
+        //             Email.send({
+        //         Host : "smtp.elasticemail.com",
+        //         Username : "ginan95010@nzaif.com",
+        //         Password : "hsingh.77",
+        //         To : 'singhhrishi007@gmail.com',
+        //         From : document.getElementById("email-sender").value,
+        //         Subject : "Message from Soft matter Website",
+        //         Body : "Sender's Details : %0A%0A" + "Name: " + name + '%0A' + "Mobile Number: " + mobile + '%0A' + "Email:" + sender + '%0A%0A' + "Message:%0A" + msg
+        //     }).then(
+        //       message => alert(message)
+        //     );
+        // }
         function onlyNumberKey(evt) {
           
           // Only ASCII character in that range allowed
@@ -121,7 +121,7 @@
 
     <footer>
         <div class="center">
-            Copyright &copy; | www.soft-matter-research-group.com. | All rights reserved.
+            Copyright &copy; | www.softmatterresearch.works. | All rights reserved.
         </div>
     </footer>
 </body>
