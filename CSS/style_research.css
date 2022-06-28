@@ -47,7 +47,9 @@
     font-size: 2em;
     color: rgb(22, 117, 113);
 }
-
+.posts p{
+    text-align: justify;
+}
 @media only screen and (max-width:700px){
     .container,.content {
         display: flex;
