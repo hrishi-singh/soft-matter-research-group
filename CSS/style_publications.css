@@ -82,6 +82,10 @@ body{
     margin: 0px;
 
 }
+ol li{
+    padding: 20px;
+}
+
 .pubheading{
     display: flex;
     text-align: center;
@@ -94,16 +98,17 @@ body{
 .card {
     position: relative;
     min-width:320px;
-    height: 440px;
     box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
         inset -5px -5px 5px rgba(255, 255, 255, 0.5),
         5px 5px 5px rgba(0, 0, 0, 0.05),
         -5px -5px 5px rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     margin: 40px;
+    background: linear-gradient(45deg,#68a7ad56,rgba(192, 192, 192, 0.247));
+    transition: 0.5s;
 }
 
-.card .journal-box {
+/* .card .journal-box {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -116,9 +121,9 @@ body{
     justify-content: center;
     align-items: center;
     transition: 0.5s;
-}
-.card:hover .journal-box {
-    transform: translateY(-50px);
+} */
+.card:hover{
+    transform: translateY(-12px);
     box-shadow: 0 10px 40px rgba(0,0,0,0.4);
 
 }
@@ -128,7 +133,7 @@ body{
     text-align: center;
 }
 
-.card .journal-box .content h2{
+.card .content h2{
     /* position: absolute; */
 
     font-size: 1.3em;
@@ -161,10 +166,12 @@ padding-bottom: 20px;
 
 #openchapter{
     background: linear-gradient(45deg,#019267,SILVER);
+    padding: 20px;
 }
 
 #chapter{
     background: url("../research_bg.jpg");
+    padding: 12px;
 }
 #chapter h2{
 font-size: 2.25em;
@@ -212,8 +219,7 @@ font-size: 2.25em;
     height: 200%;
     position: absolute;
     z-index: -1;
-    opacity: 0.57;
-
-    background-image: url('../jour_bg.png');    
+    opacity: 0.2;
+    background-image: url('/pub_img/jour_bg.png');    
 }
 
